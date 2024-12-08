@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ระบบคำนวณจำนวนลิตรจากราคาน้ำมัน</title>
+  <link rel="stylesheet" href="oil.css">
+</head>
+<body>
+  <div class="sidebar">
+    <a href="Home.html" class="active">หน้าหลัก</a>
+    <a href="caculate.html">เครื่องคิดเลข</a>
+    <a href="oil.html">คำนวนปริมาณน้ำมัน</a>
+    <a href="square.html">คำนวนพื้นที่สี่เหลี่ยม</a>
+  </div>
+  
+  <div class="content">
+    <div class="calculator">
+      <h1>ระบบคำนวณจำนวนลิตรจากราคาน้ำมัน</h1>
+      
+      <label for="fuelType">เลือกประเภทน้ำมัน:</label>
+      <select id="fuelType">
+        <option value="gasoline91">แก๊สโซฮอล์ 91</option>
+        <option value="gasolineE85">แก๊สโซฮอล์ E85</option>
+        <option value="gasoline95">เบนซิน 95</option>
+        <option value="diesel">ดีเซล</option>
+      </select>
+      
+      <label for="amount">กรอกจำนวนเงิน (บาท):</label>
+      <input type="number" id="amount" placeholder="กรอกจำนวนเงิน" min="0" required>
+
+      <button onclick="calculateLiters()">คำนวณจำนวนลิตร</button>
+      
+      <h2>จำนวนลิตรที่ได้: <span id="result">0</span> ลิตร</h2>
+    </div>
+  </div>
+
+  <script src="oil.js"></script>
+</body>
+</html>

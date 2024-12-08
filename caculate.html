@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>เครื่องคิดเลข</title>
+  <link rel="stylesheet" href="cacu.css">
+</head>
+<body>
+  <div class="sidebar">
+    <a href="Home.html" class="active">หน้าหลัก</a>
+    <a href="caculate.html">เครื่องคิดเลข</a>
+    <a href="oil.html">คำนวนปริมาณน้ำมัน</a>
+    <a href="square.html">คำนวนพื้นที่สี่เหลี่ยม</a>
+  </div>
+
+  <div class="content">
+    <div class="calculator">
+      <h1>เครื่องคิดเลขพื้นฐาน</h1>
+      <input type="number" id="num1" placeholder="กรุณาใส่ตัวเลข">
+      <input type="number" id="num2" placeholder="กรุณาใส่ตัวเลข">
+      <div class="buttons">
+        <button onclick="calculate('add')">+</button>
+        <button onclick="calculate('subtract')">-</button>
+        <button onclick="calculate('multiply')">×</button>
+        <button onclick="calculate('divide')">÷</button>
+      </div>
+      <h2>ผลลัพธ์: <span id="result">0</span></h2>
+    </div>
+  </div>
+
+  <script src="cacu.js"></script>
+</body>
+</html>

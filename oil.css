@@ -1,0 +1,97 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  display: flex;
+  height: 100vh;
+  background: url('https://i.pinimg.com/736x/e2/bc/85/e2bc854c1ec0c1704a8d0cf349fcee59.jpg') no-repeat center center fixed;
+  background-size: cover;
+}
+
+.sidebar {
+  width: 250px;
+  background: rgba(0, 0, 0, 0.5); /* โปร่งใส 50% */
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  padding: 20px 0;
+}
+
+.sidebar a {
+  text-decoration: none;
+  color: #fff;
+  padding: 15px 20px;
+  display: block;
+  border-radius: 8px;
+  margin: 5px 15px;
+  font-size: 18px;
+  transition: background 0.3s;
+}
+
+.sidebar a:hover {
+  background-color: rgba(255, 255, 255, 0.3); /* โปร่งใสเมื่อ hover */
+}
+
+.sidebar a.active {
+  background-color: rgba(255, 255, 255, 0.6);
+  color: #000;
+}
+
+.calculator {
+  background: rgba(255, 255, 255, 0.8); /* โปร่งใส 80% */
+  padding: 20px 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  width: 100%;
+  max-width: 400px;
+}
+
+.calculator h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.calculator label {
+  font-size: 16px;
+  margin-bottom: 10px;
+  display: block;
+  width: 100%;
+}
+
+.calculator select,
+.calculator input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 14px;
+  box-sizing: border-box; /* เพิ่มให้ขนาด input เท่ากับ label */
+}
+
+.calculator button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.calculator button:hover {
+  background-color: #0056b3;
+}
+
+.calculator h2 {
+  font-size: 18px;
+  margin-top: 20px;
+}
+
+.content {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

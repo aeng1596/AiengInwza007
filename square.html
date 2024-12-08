@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Area Calculator</title>
+  <link rel="stylesheet" href="square.css">
+</head>
+<body>
+  <div class="sidebar">
+    <a href="Home.html" class="active">หน้าหลัก</a>
+    <a href="caculate.html">เครื่องคิดเลข</a>
+    <a href="oil.html">คำนวนปริมาณน้ำมัน</a>
+    <a href="square.html">คำนวนพื้นที่สี่เหลี่ยม</a>
+  </div>
+
+  <div class="content">
+    <div class="calculator">
+      <h1>ระบบคำนวณพื้นที่สี่เหลี่ยม</h1>
+      
+      <label for="shapeType">เลือกประเภทสี่เหลี่ยม:</label>
+      <select id="shapeType" onchange="toggleInputFields()">
+        <option value="square">สี่เหลี่ยมจัตุรัส</option>
+        <option value="rectangle">สี่เหลี่ยมผืนผ้า</option>
+      </select>
+
+      <div id="squareInputs">
+        <input type="number" id="side" placeholder="กรอกด้านของสี่เหลี่ยมจัตุรัส" min="0">
+      </div>
+
+      <div id="rectangleInputs" style="display: none;">
+        <input type="number" id="width" placeholder="กรอกความกว้าง (หน่วย)" min="0">
+        <input type="number" id="height" placeholder="กรอกความยาว (หน่วย)" min="0">
+      </div>
+
+      <button onclick="calculateArea()">คำนวณ</button>
+      <h2>พื้นที่: <span id="result">0</span> ตารางหน่วย</h2>
+    </div>
+  </div>
+
+  <script src="square.js"></script>
+</body>
+</html>
